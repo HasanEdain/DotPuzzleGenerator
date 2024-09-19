@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FE7BD00C2C9BE9CA0077DECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE7BCFF22C9BE9C60077DECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE7BCFF92C9BE9C60077DECA;
+			remoteInfo = DominoDotsPuzzleGenerator;
+		};
+		FE7BD0162C9BE9CA0077DECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE7BCFF22C9BE9C60077DECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE7BCFF92C9BE9C60077DECA;
+			remoteInfo = DominoDotsPuzzleGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE7BCFFA2C9BE9C60077DECA /* DominoDotsPuzzleGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DominoDotsPuzzleGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7BD00B2C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DominoDotsPuzzleGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7BD0152C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DominoDotsPuzzleGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FE7BCFFC2C9BE9C60077DECA /* DominoDotsPuzzleGenerator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DominoDotsPuzzleGenerator;
+			sourceTree = "<group>";
+		};
+		FE7BD00E2C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DominoDotsPuzzleGeneratorTests;
+			sourceTree = "<group>";
+		};
+		FE7BD0182C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DominoDotsPuzzleGeneratorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE7BCFF72C9BE9C60077DECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7BD0082C9BE9CA0077DECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7BD0122C9BE9CA0077DECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE7BCFF12C9BE9C60077DECA = {
+			isa = PBXGroup;
+			children = (
+				FE7BCFFC2C9BE9C60077DECA /* DominoDotsPuzzleGenerator */,
+				FE7BD00E2C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorTests */,
+				FE7BD0182C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorUITests */,
+				FE7BCFFB2C9BE9C60077DECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE7BCFFB2C9BE9C60077DECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BCFFA2C9BE9C60077DECA /* DominoDotsPuzzleGenerator.app */,
+				FE7BD00B2C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorTests.xctest */,
+				FE7BD0152C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE7BCFF92C9BE9C60077DECA /* DominoDotsPuzzleGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE7BD01F2C9BE9CA0077DECA /* Build configuration list for PBXNativeTarget "DominoDotsPuzzleGenerator" */;
+			buildPhases = (
+				FE7BCFF62C9BE9C60077DECA /* Sources */,
+				FE7BCFF72C9BE9C60077DECA /* Frameworks */,
+				FE7BCFF82C9BE9C60077DECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FE7BCFFC2C9BE9C60077DECA /* DominoDotsPuzzleGenerator */,
+			);
+			name = DominoDotsPuzzleGenerator;
+			packageProductDependencies = (
+			);
+			productName = DominoDotsPuzzleGenerator;
+			productReference = FE7BCFFA2C9BE9C60077DECA /* DominoDotsPuzzleGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE7BD00A2C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE7BD0222C9BE9CA0077DECA /* Build configuration list for PBXNativeTarget "DominoDotsPuzzleGeneratorTests" */;
+			buildPhases = (
+				FE7BD0072C9BE9CA0077DECA /* Sources */,
+				FE7BD0082C9BE9CA0077DECA /* Frameworks */,
+				FE7BD0092C9BE9CA0077DECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE7BD00D2C9BE9CA0077DECA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FE7BD00E2C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorTests */,
+			);
+			name = DominoDotsPuzzleGeneratorTests;
+			packageProductDependencies = (
+			);
+			productName = DominoDotsPuzzleGeneratorTests;
+			productReference = FE7BD00B2C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE7BD0142C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE7BD0252C9BE9CA0077DECA /* Build configuration list for PBXNativeTarget "DominoDotsPuzzleGeneratorUITests" */;
+			buildPhases = (
+				FE7BD0112C9BE9CA0077DECA /* Sources */,
+				FE7BD0122C9BE9CA0077DECA /* Frameworks */,
+				FE7BD0132C9BE9CA0077DECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE7BD0172C9BE9CA0077DECA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FE7BD0182C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorUITests */,
+			);
+			name = DominoDotsPuzzleGeneratorUITests;
+			packageProductDependencies = (
+			);
+			productName = DominoDotsPuzzleGeneratorUITests;
+			productReference = FE7BD0152C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE7BCFF22C9BE9C60077DECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					FE7BCFF92C9BE9C60077DECA = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					FE7BD00A2C9BE9CA0077DECA = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = FE7BCFF92C9BE9C60077DECA;
+					};
+					FE7BD0142C9BE9CA0077DECA = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = FE7BCFF92C9BE9C60077DECA;
+					};
+				};
+			};
+			buildConfigurationList = FE7BCFF52C9BE9C60077DECA /* Build configuration list for PBXProject "DominoDotsPuzzleGenerator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE7BCFF12C9BE9C60077DECA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FE7BCFFB2C9BE9C60077DECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE7BCFF92C9BE9C60077DECA /* DominoDotsPuzzleGenerator */,
+				FE7BD00A2C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorTests */,
+				FE7BD0142C9BE9CA0077DECA /* DominoDotsPuzzleGeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE7BCFF82C9BE9C60077DECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7BD0092C9BE9CA0077DECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7BD0132C9BE9CA0077DECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE7BCFF62C9BE9C60077DECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7BD0072C9BE9CA0077DECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7BD0112C9BE9CA0077DECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE7BD00D2C9BE9CA0077DECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE7BCFF92C9BE9C60077DECA /* DominoDotsPuzzleGenerator */;
+			targetProxy = FE7BD00C2C9BE9CA0077DECA /* PBXContainerItemProxy */;
+		};
+		FE7BD0172C9BE9CA0077DECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE7BCFF92C9BE9C60077DECA /* DominoDotsPuzzleGenerator */;
+			targetProxy = FE7BD0162C9BE9CA0077DECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FE7BD01D2C9BE9CA0077DECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE7BD01E2C9BE9CA0077DECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FE7BD0202C9BE9CA0077DECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DominoDotsPuzzleGenerator/DominoDotsPuzzleGenerator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DominoDotsPuzzleGenerator/Preview Content\"";
+				DEVELOPMENT_TEAM = SP86DZAJ6F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.npc.DominoDotsPuzzleGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FE7BD0212C9BE9CA0077DECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DominoDotsPuzzleGenerator/DominoDotsPuzzleGenerator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DominoDotsPuzzleGenerator/Preview Content\"";
+				DEVELOPMENT_TEAM = SP86DZAJ6F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.npc.DominoDotsPuzzleGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FE7BD0232C9BE9CA0077DECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP86DZAJ6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.npc.DominoDotsPuzzleGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DominoDotsPuzzleGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DominoDotsPuzzleGenerator";
+			};
+			name = Debug;
+		};
+		FE7BD0242C9BE9CA0077DECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP86DZAJ6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.npc.DominoDotsPuzzleGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DominoDotsPuzzleGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DominoDotsPuzzleGenerator";
+			};
+			name = Release;
+		};
+		FE7BD0262C9BE9CA0077DECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP86DZAJ6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.npc.DominoDotsPuzzleGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DominoDotsPuzzleGenerator;
+			};
+			name = Debug;
+		};
+		FE7BD0272C9BE9CA0077DECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP86DZAJ6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.npc.DominoDotsPuzzleGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DominoDotsPuzzleGenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE7BCFF52C9BE9C60077DECA /* Build configuration list for PBXProject "DominoDotsPuzzleGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE7BD01D2C9BE9CA0077DECA /* Debug */,
+				FE7BD01E2C9BE9CA0077DECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE7BD01F2C9BE9CA0077DECA /* Build configuration list for PBXNativeTarget "DominoDotsPuzzleGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE7BD0202C9BE9CA0077DECA /* Debug */,
+				FE7BD0212C9BE9CA0077DECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE7BD0222C9BE9CA0077DECA /* Build configuration list for PBXNativeTarget "DominoDotsPuzzleGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE7BD0232C9BE9CA0077DECA /* Debug */,
+				FE7BD0242C9BE9CA0077DECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE7BD0252C9BE9CA0077DECA /* Build configuration list for PBXNativeTarget "DominoDotsPuzzleGeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE7BD0262C9BE9CA0077DECA /* Debug */,
+				FE7BD0272C9BE9CA0077DECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE7BCFF22C9BE9C60077DECA /* Project object */;
+}
