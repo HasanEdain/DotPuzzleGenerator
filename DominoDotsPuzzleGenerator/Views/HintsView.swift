@@ -16,17 +16,21 @@ struct HintsView: View {
 
     @ViewBuilder var hintTiles: some View {
         let hintCollection = puzzle.gatherHints()
-        HStack {
+        HStack (spacing: 8){
             ForEach(hintCollection.tiles.indices, id: \.self) { tileIndex in
                 let tile = hintCollection.tiles[tileIndex]
                 TileView(tile: tile)
+                    .background(.white)
             }
         }
+        .padding(8)
+        .border(.black)
     }
 }
 
 #Preview {
     let puzzle = Puzzle.create(width: 6, height: 6, numberOfHints: 7)
-    
+
     HintsView(puzzle: puzzle)
+        .padding()
 }

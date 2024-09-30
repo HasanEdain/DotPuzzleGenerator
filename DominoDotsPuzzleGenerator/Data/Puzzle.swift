@@ -121,7 +121,6 @@ class Puzzle {
             updateHintNumber(location: offsetLocation, value: hintNumber)
             print("Hint Location: \(location) \(offsetLocation)")
         }
-
     }
 
     func maxHintNumber() -> Int {

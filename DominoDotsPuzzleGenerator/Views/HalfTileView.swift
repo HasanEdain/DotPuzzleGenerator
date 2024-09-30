@@ -15,7 +15,7 @@ struct HalfTileView: View {
     let bgColor: Color = .white
     let bgHintColor: Color = .green
 
-    let frameWidth: CGFloat = 64.0
+    let frameWidth: CGFloat = 48.0
     let cornerRadius: CGFloat = 8
     let padding: CGFloat = 4.0
 

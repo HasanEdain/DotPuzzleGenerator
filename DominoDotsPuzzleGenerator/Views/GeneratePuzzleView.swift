@@ -95,6 +95,7 @@ struct GeneratePuzzleView: View {
 
         let homeURL = FileManager.default.homeDirectoryForCurrentUser
         let solvedUrl = homeURL.appending(path: "\(fileName)_\(saveCount)_solved.pdf")
+        print("\(solvedUrl.absoluteString)")
         let unsolvedUrl = homeURL.appending(path: "\(fileName)_\(saveCount)_puzzle.pdf")
         let hintsUrl = homeURL.appending(path: "\(fileName)_\(saveCount)_hints.pdf")
 
@@ -108,7 +109,7 @@ struct GeneratePuzzleView: View {
         rendererSolved.render { size, renderInContext in
             var box = CGRect(
                 origin: .zero,
-                size: .init(width: CGFloat(width*64), height: CGFloat(height*64))
+                size: .init(width: CGFloat(width*48), height: CGFloat(height*48))
             )
 
             guard let context = CGContext(solvedUrl as CFURL, mediaBox: &box, nil) else {
@@ -124,7 +125,7 @@ struct GeneratePuzzleView: View {
         redererPuzzle.render { size, renderInContext in
             var box = CGRect(
                 origin: .zero,
-                size: .init(width: CGFloat(width*64), height: CGFloat(height*64))
+                size: .init(width: CGFloat(width*48), height: CGFloat(height*48))
             )
 
             guard let context = CGContext(unsolvedUrl as CFURL, mediaBox: &box, nil) else {
@@ -138,7 +139,7 @@ struct GeneratePuzzleView: View {
         }
 
         renderHints.render { size, renderInContext in
-            var box = CGRect (origin: .zero, size: .init(width: CGFloat((puzzle.numberOfHints+3)*64), height: CGFloat(3 * 64)))
+            var box = CGRect (origin: .zero, size: .init(width: CGFloat(puzzle.hintLocations.count*64)+96.0, height: CGFloat(3 * 48)))
 
             guard let context = CGContext(hintsUrl as CFURL, mediaBox: &box, nil) else {
                 return
@@ -165,7 +166,7 @@ struct GeneratePuzzleView: View {
             return
         }
 
-        puzzle = Puzzle.create(width: widthValue, height: heightValue, numberOfHints: 5)
+        puzzle = Puzzle.create(width: widthValue, height: heightValue, numberOfHints: numberHintsValue)
         puzzle.numberOfHints = numberHintsValue
 
     }
