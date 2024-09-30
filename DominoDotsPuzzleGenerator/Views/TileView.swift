@@ -11,7 +11,7 @@ struct TileView: View {
     var tile: Tile
 
     var body: some View {
-        VStack {
+        VStack(spacing: 4.0) {
             HalfTileView(halfTile: tile.halfA, hintValue: 1)
             HalfTileView(halfTile: tile.halfB, hintValue: 1)
         }

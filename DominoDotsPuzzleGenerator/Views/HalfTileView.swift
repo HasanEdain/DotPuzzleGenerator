@@ -13,7 +13,7 @@ struct HalfTileView: View {
 
     let dotColor: Color = .black
     let bgColor: Color = .white
-    let bgHintColor: Color = .green
+    let bgHintColor: Color = Color(red: 0.6, green: 0.6, blue: 0.6)
 
     let frameWidth: CGFloat = 48.0
     let cornerRadius: CGFloat = 8
@@ -49,7 +49,7 @@ struct HalfTileView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(bacgroundColor)
-                .border(.blue)
+                .border(.black)
                 .cornerRadius(cornerRadius)
                 .frame(width: frameWidth)
             VStack {
@@ -71,7 +71,7 @@ struct HalfTileView: View {
             }
             .padding(padding)
         }
-        .border(.blue)
+        .border(.black)
         .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
 
@@ -81,7 +81,7 @@ struct HalfTileView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(bacgroundColor)
-                .border(.blue)
+                .border(.black)
                 .cornerRadius(cornerRadius)
             VStack {
                 HStack{
@@ -102,7 +102,7 @@ struct HalfTileView: View {
             }
             .padding(padding)
         }
-        .border(.blue)
+        .border(.black)
         .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
@@ -111,7 +111,7 @@ struct HalfTileView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(bacgroundColor)
-                .border(.blue)
+                .border(.black)
                 .cornerRadius(cornerRadius)
             VStack {
                 HStack{
@@ -132,7 +132,7 @@ struct HalfTileView: View {
             }
             .padding(padding)
         }
-        .border(.blue)
+        .border(.black)
         .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
@@ -141,7 +141,7 @@ struct HalfTileView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(bacgroundColor)
-                .border(.blue)
+                .border(.black)
                 .cornerRadius(cornerRadius)
             VStack {
                 HStack{
@@ -162,7 +162,7 @@ struct HalfTileView: View {
             }
             .padding(padding)
         }
-        .border(.blue)
+        .border(.black)
         .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
@@ -171,7 +171,7 @@ struct HalfTileView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(bacgroundColor)
-                .border(.blue)
+                .border(.black)
                 .cornerRadius(cornerRadius)
             VStack {
                 HStack{
@@ -192,7 +192,7 @@ struct HalfTileView: View {
             }
             .padding(padding)
         }
-        .border(.blue)
+        .border(.black)
         .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
@@ -201,7 +201,7 @@ struct HalfTileView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(bacgroundColor)
-                .border(.blue)
+                .border(.black)
                 .cornerRadius(cornerRadius)
             VStack {
                 HStack{
@@ -222,7 +222,7 @@ struct HalfTileView: View {
             }
             .padding(padding)
         }
-        .border(.blue)
+        .border(.black)
         .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
@@ -231,7 +231,7 @@ struct HalfTileView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(bacgroundColor)
-                .border(.blue)
+                .border(.black)
                 .cornerRadius(cornerRadius)
             VStack {
                 HStack{
@@ -251,7 +251,7 @@ struct HalfTileView: View {
                 }
             }
         }
-        .border(.blue)
+        .border(.black)
         .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }

@@ -21,18 +21,21 @@ struct GeneratePuzzleView: View {
     var body: some View {
         VStack {
             HStack {
+
+                solvedPuzzleView
+                    .padding(8)
+                unsolvedPuzzleView
+                    .padding(8)
+            }.padding()
+            HStack {
                 VStack {
                     puzzleForm
                         .padding(8)
                     saveForm
                         .padding(8)
-                }
-                solvedPuzzleView
-                    .padding(8)
-                unsolvedPuzzleView
-                    .padding(8)
+                }.frame(width: 196)
+                HintsView(puzzle: puzzle)
             }
-            HintsView(puzzle: puzzle)
         }
     }
 
@@ -138,8 +141,11 @@ struct GeneratePuzzleView: View {
             context.closePDF()
         }
 
+        let hintsCount = ceil(CGFloat(puzzle.hintLocations.count)/3.0)
+        
+        let renderHintsWidth: CGFloat = (hintsCount*84)
         renderHints.render { size, renderInContext in
-            var box = CGRect (origin: .zero, size: .init(width: CGFloat(puzzle.hintLocations.count*64)+96.0, height: CGFloat(3 * 48)))
+            var box = CGRect (origin: .zero, size: .init(width: renderHintsWidth, height: CGFloat(3 * 136)))
 
             guard let context = CGContext(hintsUrl as CFURL, mediaBox: &box, nil) else {
                 return
