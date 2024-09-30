@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "390BE3F4-DB68-4120-AB23-C0B67B0481E5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DominoDotsPuzzleGenerator/Data/Puzzle.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "maxHintNumber()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7055AB2D-5E13-485D-8180-0CC12E39CFF6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -55,16 +39,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7CFEDB49-AE14-4E36-BED9-48D3EBD7E140"
+            uuid = "027F90A6-FEF1-4C5A-BBF5-3CC27F9DD276"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DominoDotsPuzzleGenerator/Data/Puzzle.swift"
+            filePath = "DominoDotsPuzzleGenerator/Views/GeneratePuzzleView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "createHints()"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "save()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

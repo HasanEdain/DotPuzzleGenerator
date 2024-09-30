@@ -149,9 +149,9 @@ struct GeneratePuzzleView: View {
             context.closePDF()
         }
 
-        let hintsCount = ceil(CGFloat(puzzle.hintLocations.count)/3.0)
-        
-        let renderHintsWidth: CGFloat = (hintsCount*84)
+        let hintsCount = floor(CGFloat(puzzle.maxHintNumber())/3.0)
+
+        let renderHintsWidth: CGFloat = (hintsCount*72) + 4.0
         renderHints.render { size, renderInContext in
             var box = CGRect (origin: .zero, size: .init(width: renderHintsWidth, height: CGFloat(3 * 128)))
 

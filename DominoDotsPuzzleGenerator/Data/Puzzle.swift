@@ -93,7 +93,7 @@ class Puzzle {
     }
 
     func createHints() {
-        for _ in 0...numberOfHints {
+        for _ in 0..<numberOfHints {
             createHintPair()
         }
     }
