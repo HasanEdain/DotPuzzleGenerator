@@ -16,8 +16,10 @@ struct HalfTileView: View {
     let bgHintColor: Color = Color(red: 0.6, green: 0.6, blue: 0.6)
 
     let frameWidth: CGFloat = 48.0
-    let cornerRadius: CGFloat = 8
+    let cornerRound: CGSize = CGSize(width: 4, height: 4)
     let padding: CGFloat = 4.0
+    let borderWidth: CGFloat = 3.0
+    let dotPadding: CGFloat = 2
 
     var body: some View {
         if halfTile.value == 1 {
@@ -47,212 +49,172 @@ struct HalfTileView: View {
 
     @ViewBuilder func oneDot() -> some View {
         ZStack {
-            Rectangle()
-                .foregroundStyle(bacgroundColor)
-                .border(.black)
-                .cornerRadius(cornerRadius)
-                .frame(width: frameWidth)
-            VStack {
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
+            RoundedRectangle(cornerSize: cornerRound)
+                .fill(bacgroundColor)
+                .stroke(.black, lineWidth: borderWidth)
+            VStack (spacing: 0.0) {
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(bacgroundColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
             }
             .padding(padding)
         }
-        .border(.black)
-        .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
-
     }
 
     @ViewBuilder func twoDot() -> some View {
         ZStack {
-            Rectangle()
-                .foregroundStyle(bacgroundColor)
-                .border(.black)
-                .cornerRadius(cornerRadius)
-            VStack {
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
+            RoundedRectangle(cornerSize: cornerRound)
+                .fill(bacgroundColor)
+                .stroke(.black, lineWidth: borderWidth)
+            VStack (spacing: 0.0) {
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(dotColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
             }
             .padding(padding)
         }
-        .border(.black)
-        .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
 
     @ViewBuilder func threeDot() -> some View {
         ZStack {
-            Rectangle()
-                .foregroundStyle(bacgroundColor)
-                .border(.black)
-                .cornerRadius(cornerRadius)
-            VStack {
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
+            RoundedRectangle(cornerSize: cornerRound)
+                .fill(bacgroundColor)
+                .stroke(.black, lineWidth: borderWidth)
+            VStack (spacing: 0.0) {
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(dotColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
             }
             .padding(padding)
         }
-        .border(.black)
-        .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
 
     @ViewBuilder func fourDot() -> some View {
         ZStack {
-            Rectangle()
-                .foregroundStyle(bacgroundColor)
-                .border(.black)
-                .cornerRadius(cornerRadius)
-            VStack {
-                HStack{
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(dotColor)
+            RoundedRectangle(cornerSize: cornerRound)
+                .fill(bacgroundColor)
+                .stroke(.black, lineWidth: borderWidth)
+            VStack (spacing: 0.0) {
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(dotColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
                 }
             }
             .padding(padding)
         }
-        .border(.black)
-        .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
 
     @ViewBuilder func fiveDot() -> some View {
         ZStack {
-            Rectangle()
-                .foregroundStyle(bacgroundColor)
-                .border(.black)
-                .cornerRadius(cornerRadius)
-            VStack {
-                HStack{
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(dotColor)
+            RoundedRectangle(cornerSize: cornerRound)
+                .fill(bacgroundColor)
+                .stroke(.black, lineWidth: borderWidth)
+            VStack (spacing: 0.0) {
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(bacgroundColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(dotColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
                 }
             }
             .padding(padding)
         }
-        .border(.black)
-        .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
 
     @ViewBuilder func sixDot() -> some View {
         ZStack {
-            Rectangle()
-                .foregroundStyle(bacgroundColor)
-                .border(.black)
-                .cornerRadius(cornerRadius)
-            VStack {
-                HStack{
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(dotColor)
+            RoundedRectangle(cornerSize: cornerRound)
+                .fill(bacgroundColor)
+                .stroke(.black, lineWidth: borderWidth)
+            VStack (spacing: 0.0) {
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
+                    Circle().foregroundStyle(bacgroundColor).padding(dotPadding)
                 }
-                HStack{
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(dotColor)
-                    Circle().foregroundStyle(dotColor)
+                HStack (spacing: 0.0) {
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
+                    Circle().foregroundStyle(dotColor).padding(dotPadding)
                 }
             }
             .padding(padding)
         }
-        .border(.black)
-        .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
 
     @ViewBuilder func zeroDot() -> some View {
         ZStack {
-            Rectangle()
-                .foregroundStyle(bacgroundColor)
-                .border(.black)
-                .cornerRadius(cornerRadius)
-            VStack {
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                }
-                HStack{
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                    Circle().foregroundStyle(bacgroundColor)
-                }
-            }
+            RoundedRectangle(cornerSize: cornerRound)
+                .fill(bacgroundColor)
+                .stroke(.black, lineWidth: borderWidth)
         }
-        .border(.black)
-        .cornerRadius(cornerRadius)
         .frame(width: frameWidth, height: frameWidth)
     }
 }
@@ -275,7 +237,9 @@ struct HalfTileView: View {
         HalfTileView(halfTile: sixDot, hintValue: 0)
         HalfTileView(halfTile: zeroDot, hintValue: 0)
         HalfTileView(halfTile: zeroDot, hintValue: 3)
-    }.padding(8)
+    }
+//        .background(.white)
+        .padding(8)
 
     vstack
 }
