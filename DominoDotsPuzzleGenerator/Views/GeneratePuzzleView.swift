@@ -16,12 +16,11 @@ struct GeneratePuzzleView: View {
 
     @State var puzzle: Puzzle = Puzzle.create(width: 5, height: 5, numberOfHints: 5)
 
-    @State private var saveCount: Int = 0
+    @State private var saveCountString: String = "0"
 
     var body: some View {
         VStack {
             HStack {
-
                 solvedPuzzleView
                     .padding(8)
                 unsolvedPuzzleView
@@ -73,6 +72,12 @@ struct GeneratePuzzleView: View {
                     icon: { Image(systemName: "doc.richtext") }
                 )
             }
+            TextField(text: $saveCountString) {
+                Label(
+                    title: { Text("Save Count") },
+                    icon: { Image(systemName: "number") }
+                )
+            }
             Button("Save") {
                 save()
             }
@@ -97,6 +102,9 @@ struct GeneratePuzzleView: View {
         let renderHints = ImageRenderer(content: hintView)
 
         let homeURL = FileManager.default.homeDirectoryForCurrentUser
+
+        let saveCount = Int(saveCountString) ?? 0
+
         let solvedUrl = homeURL.appending(path: "\(fileName)_\(saveCount)_solved.pdf")
         print("\(solvedUrl.absoluteString)")
         let unsolvedUrl = homeURL.appending(path: "\(fileName)_\(saveCount)_puzzle.pdf")
@@ -145,7 +153,7 @@ struct GeneratePuzzleView: View {
         
         let renderHintsWidth: CGFloat = (hintsCount*84)
         renderHints.render { size, renderInContext in
-            var box = CGRect (origin: .zero, size: .init(width: renderHintsWidth, height: CGFloat(3 * 136)))
+            var box = CGRect (origin: .zero, size: .init(width: renderHintsWidth, height: CGFloat(3 * 128)))
 
             guard let context = CGContext(hintsUrl as CFURL, mediaBox: &box, nil) else {
                 return
@@ -157,7 +165,7 @@ struct GeneratePuzzleView: View {
             context.closePDF()
         }
 
-        self.saveCount = saveCount + 1
+        self.saveCountString = String(saveCount + 1)
     }
 
 
